@@ -24,7 +24,7 @@ depends: [
 ]
 
 build: [
-  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "build" "-p" name "-j" "1" "--verbose" "--no-buffer"]
 ]
 
 description: "Luv is a binding to libuv, the cross-platform C library that does
@@ -37,8 +37,8 @@ alternative to the standard module Unix."
 
 url {
   src:
-    "https://github.com/aantron/luv/releases/download/0.5.14/luv-0.5.14.tar.gz"
+    "https://github.com/tobil4sk/luv/releases/download/0.5.14/luv-0.5.14.tar.gz"
   checksum: [
-    "sha256=8e01b4a50c8876cdd98d8e245c0687c4dc4d883aed161ad9c5ace1fb1fdaae99"
+    "sha256=20d16665f6c77e4c672dcd2161176570dd7a7259641a2edfaf7b27c69d7e700f"
   ]
 }
