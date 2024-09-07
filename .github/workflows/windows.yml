@@ -89,6 +89,8 @@ jobs:
 
           opam exec -- bash -c "echo `$PATH"
 
+          cat D:\opamroot\opam-init\*.sh
+
           $pkgs = $env:ALL_CHANGED_PACKAGES | ConvertFrom-Json
           $failed = $false
           opam update
