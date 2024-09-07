@@ -91,6 +91,10 @@ jobs:
 
           cat D:\opamroot\opam-init\*.sh
 
+          opam exec -- where.exe bash
+          opam exec -- where.exe make
+          opam exec -- printenv
+
           $pkgs = $env:ALL_CHANGED_PACKAGES | ConvertFrom-Json
           $failed = $false
           opam update
