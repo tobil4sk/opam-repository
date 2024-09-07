@@ -95,6 +95,8 @@ jobs:
           opam exec -- where.exe make
           opam exec -- printenv
 
+          $env:PATH="D:\opamroot\.cygwin\root\usr\x86_64-w64-mingw32\bin;D:\opamroot\.cygwin\root\bin;$env:PATH"
+
           $pkgs = $env:ALL_CHANGED_PACKAGES | ConvertFrom-Json
           $failed = $false
           opam update
